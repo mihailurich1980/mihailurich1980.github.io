@@ -9,9 +9,14 @@
 
 https://getbootstrap.com/docs/5.3/components/card/
 
-05.50 */
+05.55 */
+
+/*  Ссылка на использование гугль шрифта на странице */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 body {
-  background: linear-gradient(85deg, #ffffff 5%, #120fa7 62%, #050c03 98%);
+  font-family: Roboto, serif;
+  background: linear-gradient(85deg, #9a9fd1 5%, #120fa7 62%, #050c03 98%);
 }
 
 /* .col-lg-4 col-md-6 {
@@ -29,3 +34,53 @@ body {
   display: inline-block;
   padding: 0%;
 }
+.sitebar {
+  color: aquamarine;
+  background: linear-gradient(275deg, #3636b9 5%, #120fa7d8 62%, #050c03 98%);
+}
+.card {
+  color: aquamarine;
+  background: linear-gradient(275deg, #3636b9 5%, #120fa7d8 62%, #050c03 98%);
+}
+.card a {
+  text-decoration: none;
+  color: aquamarine;
+}
+.navbar {
+  background: linear-gradient(275deg, #6e6edc 5%, #120fa7d8 62%, #180b30 98%);
+}
+/* Центровка текста в карусели */
+.slaid_text,
+.footer-text {
+  color: aquamarine;
+  margin: auto auto;
+}
+
+footer {
+  background: linear-gradient(275deg, #3636b9 5%, #120fa7d8 62%, #050c03 98%);
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
+.videotext>a>h1, h2 {
+  color: aquamarine;
+  align-content: end;
+  
+  
+  
+}
+
+.videotext>a {
+  text-decoration: none;
+  align-content: end;
+  text-justify: auto auto ;
+}
+.videotext> {
+ 
+  align-self: center;
+}
+
+/* 06.31 */

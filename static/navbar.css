@@ -1,0 +1,75 @@
+/* 04.31  */
+.navbar {
+  display: flex;
+  background-color: rgb(211, 211, 182);
+}
+
+.nav_list {
+  display: flex;
+  background-color: rgb(211, 211, 182);
+}
+
+.nav_list a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: rgb(21, 1, 92);
+  border-color: rgb(141, 141, 124);
+  border-style: solid;
+  border-width: o.2px;
+  border-radius: 0.9em;
+  margin: 0.1em;
+}
+
+/*  позволяет изменить css стиль
+когда на него наведен курсор
+- псевдокласс hover  */
+.nav_list a:hover {
+  background-color: rgb(173, 173, 154);
+  border-color: rgb(69, 59, 211);
+  border-style: solid;
+  border-width: o.2px;
+  border-radius: 0.9em;
+
+}
+
+.nav-btn {
+  display: none;
+}
+.nav-btn:hover {
+  background-color:rgb(173, 173, 154) ;
+  border-color: rgb(69, 59, 211);
+  border-style: solid;
+  border-width: o.2px;
+}
+
+
+
+@media (max-width: 1000px) {
+  .nav-btn {
+    font-size: 2em;
+    padding-inline: 10px;
+    padding-bottom: 4px;
+    border-style: solid;
+    border-color: rgb(211, 211, 182);
+    border-width: o.8px;
+    background-color: rgb(211, 211, 182);
+    color: rgb(21, 1, 92);
+    display: block;
+    cursor: pointer;
+    /*  при наведении курсора  */
+  }
+  .nav_list {
+    display: none;
+  }
+  .drop:hover .nav_list {
+    display: block;
+    position: absolute;
+    right: 1px;
+  }
+  .navbar {
+    display: flex;
+    background-color: rgb(211, 211, 182);
+    justify-content: space-between;
+  }
+}

@@ -9,6 +9,15 @@
 
 https://getbootstrap.com/docs/5.3/components/card/
 
+animation: myAnim 2s ease 0s 1 reverse both;
+
+animation: myAnim 2s ease 0s infinite normal forwrds;
+
+1 reverse both;
+
+
+
+
 05.55 */
 
 /*  Ссылка на использование гугль шрифта на странице */
@@ -19,6 +28,13 @@ body {
   background: linear-gradient(85deg, #9a9fd1 5%, #120fa7 62%, #050c03 98%);
 }
 
+p {
+  color: aquamarine;
+}
+
+p > a {
+  color: aquamarine;
+}
 /* .col-lg-4 col-md-6 {
   box-shadow: 6px 11px 24px 6px #000000;
 } */
@@ -56,8 +72,42 @@ body {
   margin: auto auto;
 }
 
-footer {
+footer, 
+.btn-outline-primary {
+  margin-top: 1em;
   background: linear-gradient(275deg, #3636b9 5%, #120fa7d8 62%, #050c03 98%);
+}
+
+.coll-anim {
+  animation: myAnim 2s ease 0s 1 reverse both;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
 
 @media (max-width: 755px) {
@@ -65,22 +115,25 @@ footer {
     display: none;
   }
 }
-.videotext>a>h1, h2 {
+.videotext > a > h1,
+h2 {
   color: aquamarine;
   align-content: end;
-  
-  
-  
 }
 
-.videotext>a {
+.videotext > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   text-decoration: none;
-  align-content: end;
-  text-justify: auto auto ;
 }
-.videotext> {
- 
-  align-self: center;
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 06.31 */
